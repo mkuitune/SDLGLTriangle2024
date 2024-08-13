@@ -2,18 +2,6 @@
 # SDLGLTriangle2024
 A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024. The main components of the build system are CMake and Vcpkg.
 
-We install the platform specific packages in vcpkg, and point CMake to the correct vcpkg path using this line ine the CMakeLists.txt file:
-
-```set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")```
-
-We have three files:
-* CMakeLists.txt (this is the main CMake build definition file)
-* vcpkg.json (this is used to simplify installation of packages to vcpkg)
-* main.cpp
-
-All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). The interesting part is how to combine CMake and vcpkg in a simple manner (for the user).
-
-
 # Usage
 git clone https://github.com/mkuitune/SDLGLTriangle2024.git
 
@@ -30,6 +18,20 @@ cd ..
 cmake -S . -B build
 
 cmake --build build
+
+# What it does
+
+We install the platform specific packages in vcpkg, and point CMake to the correct vcpkg path using this line the CMakeLists.txt file:
+
+```set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")```
+
+We have three files:
+* CMakeLists.txt (this is the main CMake build definition file)
+* vcpkg.json (this is used to simplify installation of packages to vcpkg)
+* main.cpp
+
+All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). The interesting part is how to combine CMake and vcpkg in a simple manner (for the user).
+
 
 
 # The recipe starting from scratch:
