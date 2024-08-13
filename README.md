@@ -5,6 +5,9 @@ A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024.
 The recipe starting from scratch:
 #Step 1
 
+## Prerequisities
+Install Git and Cmake and Visual Studio 2022 (Community edition is just fine). Visual Studio comes with Git and CMake so it might suffice (my setup is so messed up I can't tell, sorry).
+
 ## Already done in this repo
 git init
 git submodule add https://github.com/microsoft/vcpkg.git
