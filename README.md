@@ -7,8 +7,8 @@ We install the platform specific packages in vcpkg, and point CMake to the corre
 ```set(CMAKE_TOOLCHAIN_FILE "${CMAKE_SOURCE_DIR}/vcpkg/scripts/buildsystems/vcpkg.cmake")```
 
 We have three files:
-* CMakeLists.txt 
-* vcpkg.json
+* CMakeLists.txt (this is the main CMake build definition file)
+* vcpkg.json (this is used to simplify installation of packages to vcpkg)
 * main.cpp
 
 All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). The interesting part is how to combine CMake and vcpkg in a simple manner (for the user).
