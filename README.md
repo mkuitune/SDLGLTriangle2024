@@ -70,3 +70,4 @@ cmake -S . -B build
 cmake --build build
 ### Visual studio (2022 and up)
 Open CMake project, point it at the CMakeLists.txt file
+![alt text](doc/cmakeinvs.png)
