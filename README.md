@@ -2,6 +2,8 @@
 # SDLGLTriangle2024
 A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024.
 
+All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). 
+
 # Usage
 git clone https://github.com/mkuitune/SDLGLTriangle2024.git
 
