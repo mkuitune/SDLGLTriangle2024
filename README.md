@@ -41,6 +41,7 @@ Install Git and Cmake and Visual Studio 2022 (Community edition is just fine). V
 
 ### Already done in this repo
 git init
+
 git submodule add https://github.com/microsoft/vcpkg.git
 
 ### Stuff that needs to be done
