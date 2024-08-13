@@ -40,4 +40,8 @@ run vcpkg install (in project root):
 Haven't tested yet
 
 # Step 4 Build
-Build it (not sure how much instructions are needed for cmake...)
+## Command line
+cmake -S . -B build
+cmake --build build
+## Visual studio (2022 and up)
+Open CMake project, point it at the CMakeLists.txt file
