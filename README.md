@@ -2,12 +2,20 @@
 A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024.
 
 # Usage
+git clone https://github.com/mkuitune/SDLGLTriangle2024.git
+
 git submodule update --init
+
 cd vcpkg
+
 ./bootstrap-vcpkg.sh -useSystemBinaries
+
 cd ..
+
 ./vcpkg/vcpkg install --triplet x64-windows
+
 cmake -S . -B build
+
 cmake --build build
 
 
