@@ -25,16 +25,6 @@ cd vcpkg
 bootstrap-vcpkg.bat
 
 # Step 2
-in project root:
-vcpkg.json:
-{
-    "version": "3",
-    "dependencies": [
-        "glm"
-    ]
-}
-
-# Step 3
 run vcpkg install (in project root):
 ## Windows
 ./vcpkg/vcpkg install --triplet x64-windows
@@ -42,7 +32,7 @@ run vcpkg install (in project root):
 ## Linux
 Haven't tested yet
 
-# Step 4 Build
+# Step 3 Build
 ## Command line
 cmake -S . -B build
 cmake --build build
