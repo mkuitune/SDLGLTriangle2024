@@ -1,6 +1,6 @@
 ![alt text](doc/screenshot.png)
 # SDLGLTriangle2024
-A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024. The main components of the build system are CMake and Vcpkg.
+A sample how to setup a minimal fuzz OpenGL C++ project for windows in 2024 using SDL as the windowing system adapter. The main components of the build system are CMake and Vcpkg. The main contribution is demonstration how to combine these two into a (relatively) painless and straighforward build configuration for any type of project on Windows.
 
 # Usage
 git clone https://github.com/mkuitune/SDLGLTriangle2024.git
