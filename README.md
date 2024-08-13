@@ -30,9 +30,7 @@ We have three files:
 * vcpkg.json (this is used to simplify installation of packages to vcpkg)
 * main.cpp
 
-All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). The interesting part is how to combine CMake and vcpkg in a simple manner (for the user).
-
-
+All of the code is in main.cpp. It renders a triangle, and is not good for any purpose (except proving that the build setup works). The interesting part is how to combine CMake and vcpkg in a simple manner.
 
 # The recipe starting from scratch:
 
